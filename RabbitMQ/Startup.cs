@@ -28,7 +28,7 @@ namespace RabbitMQ
                 configuration.RootPath = "ClientApp/build";
             });
 
-            services.AddMemoryCache();
+            services.AddMemoryCache(); // DI for IMemoryCache
             services.AddSingleton<Producer>();
             services.AddSingleton<Consumer>();
         }
